@@ -3,39 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class 10th Science Original Notes</title>
+    <title>Class 10 Science Full Premium Notes</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background-color: #f4f7f6; color: #333; padding: 20px; }
-        .container { max-width: 1000px; margin: 0 auto; background: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        
-        /* Welcome Banner Styling */
-        .welcome-banner { background: linear-gradient(135deg, #3498db, #2c3e50); color: white; padding: 20px; border-radius: 10px; text-align: center; margin-bottom: 25px; }
-        .welcome-banner h1 { margin-bottom: 5px; font-size: 28px; }
-        .welcome-banner p { font-size: 15px; opacity: 0.9; }
-        #student-name-display { font-weight: bold; color: #f1c40f; }
-        
-        .search-box { position: relative; max-width: 500px; margin: 0 auto 35px auto; }
-        .search-box input { width: 100%; padding: 15px 20px; font-size: 16px; border: 2px solid #ddd; border-radius: 30px; outline: none; transition: all 0.3s ease; }
-        .search-box input:focus { border-color: #3498db; box-shadow: 0 0 8px rgba(52, 152, 219, 0.2); }
-        
-        .unit-title { font-size: 22px; color: #2c3e50; margin: 30px 0 15px 0; padding-bottom: 5px; border-bottom: 3px solid #3498db; font-weight: bold; }
-        .chapters-grid { display: grid; grid-template-columns: 1fr; gap: 15px; }
-        @media (min-width: 600px) { .chapters-grid { grid-template-columns: 1fr 1fr; } }
-        
-        .chapter-card { background: #fafafa; border: 1px solid #e0e0e0; border-radius: 8px; padding: 15px; display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.2s, box-shadow 0.2s; }
-        .chapter-card:hover { transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-        .chapter-info h3 { font-size: 16px; color: #34495e; margin-bottom: 5px; }
-        .chapter-info p { font-size: 13px; color: #7f8c8d; margin-bottom: 15px; }
-        
-        .btn { display: inline-block; text-align: center; background-color: #3498db; color: white; text-decoration: none; padding: 10px 15px; border-radius: 6px; font-weight: 600; font-size: 14px; cursor: pointer; border: none; transition: background 0.2s; }
-        .btn:hover { background-color: #2980b9; }
-        
-        /* Highlight Last Read Button */
-        .btn-last-read { background-color: #e67e22; }
-        .btn-last-read:hover { background-color: #d35400; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background-color: #f0f4f8; color: #2d3748; padding: 15px; line-height: 1.7; }
+        .container { max-width: 850px; margin: 0 auto; background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); }
+        .header { background: linear-gradient(135deg, #1a365d, #2a4365); color: white; padding: 30px; border-radius: 10px; text-align: center; margin-bottom: 25px; }
+        .header h1 { font-size: 28px; margin-bottom: 10px; }
+        .header p { font-size: 15px; opacity: 0.9; }
+        .chapter-box { background: #fff; border: 1px solid #e2e8f0; border-left: 6px solid #2b6cb0; border-radius: 8px; margin-bottom: 15px; padding: 18px; transition: all 0.2s; }
+        .chapter-title { font-size: 19px; color: #1a202c; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .chapter-content { display: none; padding-top: 15px; border-top: 1px dashed #cbd5e0; margin-top: 15px; }
+        .chapter-content h3 { color: #2b6cb0; margin: 20px 0 8px 0; font-size: 17px; border-bottom: 2px solid #edf2f7; padding-bottom: 4px; }
+        .chapter-content p { font-size: 15px; color: #4a5568; margin-bottom: 12px; }
+        .chapter-content ul { margin-left: 22px; margin-bottom: 12px; }
+        .chapter-content li { margin-bottom: 6px; font-size: 15px; }
+        .formula-box { background: #f7fafc; border-left: 4px solid #4299e1; padding: 12px; font-family: 'Courier New', Courier, monospace; margin: 12px 0; font-weight: bold; color: #1a202c; white-space: pre-wrap; }
+        .open { border-left-color: #319795; }
+        .open .chapter-title { color: #234e52; }
+        .open .chapter-content { display: block; }
+        .toggle-icon::after { content: '➕'; font-size: 14px; }
+        .open .toggle-icon::after { content: '➖'; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Class 10 Science (विज्ञान) Complete Notes 📚</h1>
+        <p>WhatsApp par dosto ke sath share karein aur milkar board exam ki taiyari karein!</p>
+    </div>
+        <div class="chapter-box">
+        <div class="chapter-title" onclick="toggleChapter(this)"><span>Ch 1: Chemical Reactions & Equations</span><span class="toggle-icon"></span></div>
+        <div class="chapter-content">
+            <h3>1. Chemical Reaction (रासायनिक अभिक्रिया):</h3><p>Aisa process jisme naye properties wale naye substances bante hain.</p>
+            <h3>2. Balancing Equation (समीकरण संतुलित करना):</h3><p>Law of Conservation of Mass ke mutabik dono taraf atoms ki sankhya barabar honi chahiye.</p>
+            <div class="formula-box">Example: 3Fe + 4H₂O → Fe₃O₄ + 4H₂</div>
+            <h3>3. Types of Reactions:</h3>
+            <ul>
+                <li><b>Combination:</b> A + B → AB (Do milkar ek banna)</li>
+                <li><b>Decomposition:</b> AB → A + B (Ek tootkar do banna)</li>
+                <li><b>Displacement:</b> Fe + CuSO₄ → FeSO₄ + Cu (Zyada reactive metal kam reactive ko hata deta hai)</li>
+            </ul>
+        </div>
+    </div>
 
-        #no-results { display: none; text-align: center; color: #e74c3c; font-weight: bold; margin-top: 20px; }
+    <div class="chapter-box">
+        <div class="chapter-title" onclick="toggleChapter(this)"><span>Ch 2: Acids, Bases and Salts</span><span class="toggle-icon"></span></div>
+        <div class="chapter-content">
+            <h3>1. Acids vs Bases:</h3>
+            <p><b>Acids:</b> Swaad mein khatte, H⁺ ions dete hain, blue litmus ko red karte hain.</p>
+            <p><b>Bases:</b> Swaad mein kadwe, OH⁻ ions dete hain, red litmus ko blue karte hain.</p>
+            <h3>2. pH Scale:</h3><p>0 se 14 tak hota hai. 7 se kam = Acid, 7 = Neutral (Pani), 7 se zyada = Base.</p>
+            <h3>3. Important Formulas:</h3>
+            <div class="formula-box">Bleaching Powder: CaOCl₂&#10;Baking Soda: NaHCO₃&#10;Washing Soda: Na₂CO₃·10H₂O&#10;Plaster of Paris (POP): CaSO₄·½H₂O</div>
+        </div>
+    </div>
 
-        /* Notes Popup/Modal Styling */
-        .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.6
+    <div class="chapter-box">
+        <div class="chapter-title" onclick="toggleChapter(this)"><span>Ch 3: Metals and Non-metals</span><span class="toggle-icon"></span></div>
+        <div class="chapter-content">
+            <h3>1. Physical Properties:</h3><p>Metals sonorous, malleable aur ductile hote hain. Non-metals brittle hote hain.</p>
+            <h3>2. Amphoteric Oxides (उभयधर्मी ऑक्साइड):</h3><p>Jo acid aur base dono se react karke salt aur water banate hain.</p>
+            <div class="formula-box">Examples: Al₂O₃ aur ZnO</div>
+            <h3>3. Ionic Compounds:</h3><p>Electrons ke transfer se bante hain. Inka melting point bahut high hota hai.</p>
+        </div>
+    </div>
+
+    <div class="chapter-box">
+        <div class="chapter-title" onclick="toggleChapter(this)"><span>Ch 4: Carbon and its Compounds</span><span class="toggle-icon"></span></div>
+        <div class="chapter-content">
+            <h3>1. Covalent Bonding:</h3><p>Carbon ka atomic number 6 hai (2,4). Ye electrons ki sharing karke covalent bond banata hai.</p>
+            <h3>2. Versatile Nature of Carbon:</h3><ul><li><b>Catenation:</b> Carbon-carbon lambi chain banane ki property.</li><li><b>Tetravalency:</b> 4 valency hone ke karan 4 alag atoms se jud sakta hai.</li></ul>
+            <h3>3. Hydrocarbons:</h3><p><b>Saturated:</b> Single bond (Alkane: CₙH₂ₙ₊₂). <b>Unsaturated:</b> Double/Triple bond (Alkene/Alkyne).</p>
+        </div>
+    </div>
+
+    <div class="chapter-box">
+        <div class="chapter-title" onclick="toggleChapter(this)"><span>Ch 5: Life Processes (जैव प्रक्रम)</span><span class="toggle-icon"></span></div>
+        <div class="chapter-content">
+            <h3>1. Nutrition (पोषण):</h3><p><b>Autotrophic:</b> Plants jo Photosynthesis se apna khana khud banate hain. (6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂)</p><p><b>Heterotrophic:</b> Animals jo dusro par nirbhar hain.</p>
+            <h3>2. Respiration (श्वसन):</h3><p>Glucose ka breakdown karke ATP (energy) banana. Mitochondria ko cell ka powerhouse kehte hain.</p>
+            <h3>3. Human Excretion:</h3><p>Kidney ke andar "Nephrons" hote hain jo khoon ko saaf karke urine banate hain.</p>
+        </div>
+    </div>
+
+    <div class="chapter-box">
+        <div class="chapter-title" onclick="toggleChapter(this)"><span>Ch 6: Control and Coordination</span><span class="toggle-icon"></span></div>
+        <div class="chapter-content">
+            <h3>1. Nervous System:</h3><p>Neuron body ka sabsb lamba cell hai jo signals brain tak pahunchata hai. Do neurons ke bich ke gap ko <b>Synapse</b> kehte hain.</p>
+            <h3>2. Reflex Action:</h3><p>Achanak hone wala response jo seedhe Spinal Cord control karta hai.</p>
+            <h3>3. Plant Hormones:</h3><ul><li><b>Auxin & Gibberellin:</b> Growth badhate hain.</li><li><b>Abscisic Acid:</b> Growth ko rokta hai (pattiyan murjhana).</li></ul>
+        </div>
+    </div>
+
+    <div class="chapter-box">
+        <div class="chapter-title" onclick="toggleChapter(this)"><span>Ch 7: How do Organisms Reproduce?</span><span class="toggle-icon"></span></div>
+        <div class="chapter-content">
+            <h3>1. Asexual Reproduction:</h3><ul><li><b>Binary Fission:</b> Amoeba mein ek se do banna.</li><li><b>Budding:</b> Hydra mein chota bud nikalna.</li><li><b>Regeneration:</b> Planaria ka kata hua hissa fir se ugna.</li></ul>
+            <h3>2. Sexual Reproduction:</h3><p>Male gamete (Sperm) aur Female gamete (Ova) milkar Zygote banate hain.</p>
+            <h3>3. Contraception Methods:</h3><p>Condoms (Barrier), Copper-T (IUCD), aur Surgical (Vasectomy/Tubectomy) family planning ke liye use hote hain.</p>
+        </div>
+    </div>
+        <div class="chapter-box">
+        <div class="chapter-title" onclick="toggleChapter(this)"><span>Ch 8: Heredity (आनुवंशिकता)</span><span class="toggle-icon"></span></div>
+        <div class="chapter-content">
+            <h3>1. Mendel's Experiment:</h3><p>Gregor Mendel ko Father of Genetics kehte hain. Unhone Pea Plant (matar ke paudhe) par experiment kiya tha.</p>
+            <h3>2. Monohybrid Cross:</h3><p>F2 generation mein Phenotypic ratio hamesha <b>3:1</b> aata hai.</p>
+            <h3>3. Sex Determination in Humans:</h3><p>Humans mein 23 pairs chromosomes hote hain. 22 pairs same hote hain, 23rd pair sex chromosome hota hai (Male: XY, Female: XX). Bachhe ka gender father ke chromosome (X ya Y) par nirbhar karta hai.</p>
+        </div>
+    </div>
+
+    <div class="chapter-box">
+        <div class="chapter-title" onclick="toggleChapter(this)"><span>Ch 9: Light - Reflection & Refraction</span><span class="toggle-icon"></span></div>
+        <div class="chapter-content">
+            <h3>1. Reflection (परावर्तन):</h3><p>Angle of Incidence hamesha Angle of Reflection ke barabar hota hai (∠i = ∠r).</p>
+            <h3>2. Formulas:</h3>
+            <div class="formula-box">Mirror Formula: 1/f = 1/v + 1/u&#10;Lens Formula: 1/f = 1/v - 1/u&#10;Magnification: m = -v/u (Mirror) | m = v/u (Lens)&#10;Power of Lens: P = 1/f (in meters) (Unit: Dioptre)</div>
+            <h3>3. Refractive Index:</h3><p>n = c/v (Speed of light in vacuum / Speed of light in medium).</p>
+        </div>
+    </div>
+
+    <div class="chapter-box">
+        <div class="chapter-title" onclick="toggleChapter(this)"><span>Ch 10: Human Eye & Colorful World</span><span class="toggle-icon"></span></div>
+        <div class="chapter-content">
+            <h3>1. Defects of Vision:</h3>
+            <ul>
+                <li><b>Myopia (Near-sightedness):</b> Paas ka dikhta hai, door ka nahi. <i>Correction: Concave Lens.</i></li>
+                <li><b>Hypermetropia (Far-sightedness):</b> Door ka dikhta hai, paas ka nahi. <i>Correction: Convex Lens.</i></li>
+                <li><b>Presbyopia:</b> Budhapa mein dono kharab hona. <i>Correction: Bifocal Lens.</i></li>
+            </ul>
+            <h3>2. Prism Dispersion:</h3><p>White light ka 7 rangon (VIBGYOR) mein tootna dispersion kehlata hai.</p>
+            <h3>3. Atmospheric Refraction:</h3><p>Stars ka टिमटिमाना (twinkling) aur Advance sunrise isi ke karan hota hai.</p>
+        </div>
+    </div>
+
+    <div class="chapter-box">
+        <div class="chapter-title" onclick="toggleChapter(this)"><span>Ch 11: Electricity (विद्युत)</span><span class="toggle-icon"></span></div>
+        <div class="chapter-content">
+            <h3>1. Ohm's Law:</h3><p>Constant temperature par Potential Difference current ke directly proportional hota hai.</p>
+            <div class="formula-box">V = IR (R = Resistance, Unit: Ohm Ω)</div>
+            <h3>2. Resistance Combination:</h3>
+            <div class="formula-box">Series (श्रेणीक्रम): R_s = R₁ + R₂ + R₃&#10;Parallel (पार्वक्रम): 1/R_p = 1/R₁ + 1/R₂ + 1/R₃</div>
+            <h3>3. Joule's Heating Effect:</h3><p>H = I²Rt (Electrical energy ka heat mein badalna).</p>
+        </div>
+    </div>
+
+    <div class="chapter-box">
+        <div class="chapter-title" onclick="toggleChapter(this)"><span>Ch 12: Magnetic Effects of Current</span><span class="toggle-icon"></span></div>
+        <div class="chapter-content">
+            <h3>1. Magnetic Field Lines:</h3><p>North pole se nikalti hain aur South pole par khatam hoti hain. Ye lines kabhi ek dusre ko intersect (kaat-ti) nahi hain.</p>
+            <h3>2. Right Hand Thumb Rule:</h3><p>Angutha current ki direction dikhata hai aur ungliyan magnetic field ki direction.</p>
+            <h3>3. Solenoid (परिनालिका):</h3><p>Insulated copper wire ki coil jisme se current pass karne par wo temporary magnet (electromagnet) ban jaati hai.</p>
+        </div>
+    </div>
+
+    <div class="chapter-box">
+        <div class="chapter-title" onclick="toggleChapter(this)"><span>Ch 13: Our Environment</span><span class="toggle-icon"></span></div>
+        <div class="chapter-content">
+            <h3>1. Ecosystem Components:</h3><p>Biotic (Living: Plants, Animals) aur Abiotic (Non-living: Air, Water, Soil).</p>
+            <h3>2. 10% Energy Law:</h3><p>Ek trophic level se dusre level tak sirf 10% energy hi transfer hoti hai, baki 90% loss ho jaati hai.</p>
+            <h3>3. Ozone Layer Depletion:</h3><p>Ozone (O₃) UV rays ko rokti hai. Isko CFCs (Chlorofluorocarbons) gas nuksan pahunchati hai.</p>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function toggleChapter(element) {
+        element.parentElement.classList.toggle('open');
+    }
+</script>
+</body>
+</html>
